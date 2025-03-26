@@ -12,7 +12,7 @@ class Output(BaseModel):
 my_llm = LLM(
     model="gemini/gemini-1.5-flash",
     temperature=0.7,
-    api_key="AIzaSyBuOoH6JuuzipAO_OUAwmTqOnwg6jKxTwE"
+    os.environ["GEMINI_API_KEY"]
 )
 
 step_reasoner = Agent(
